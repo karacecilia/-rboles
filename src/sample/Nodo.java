@@ -5,11 +5,17 @@ package sample;
  */
 public class Nodo {
     private Nodo raiz, der, izq;
+    public int zise;
+
 
     public  Object valor;
     public Nodo(Object valor) {
         this.valor = valor;
     }
+    public int size getzise(){
+        return zise;
+    }
+
     public Nodo getRaiz(){
         return raiz;
     }
