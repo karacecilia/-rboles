@@ -22,21 +22,12 @@ public class Árbol {
         }
     }
 
-    public void setLeft(Object valor){
-        if (!IsLeft()){
-            nodo.setDer(new Nodo(valor));
-        }
-    }
 
-    public void setRight(Object valor){
-        if ((!Isright())){
-            nodo.setIzq(new Nodo(valor));
-        }
-    }
+
 
     public static void preOrden(Nodo raiz) {
         if(raiz != null) {
-            System.out.print(raiz.getValor()+"\t");
+            System.out.print("| "+raiz.getRaiz()+" ");
             preOrden(raiz.getIzq());
             preOrden(raiz.getDer());
         }
@@ -44,18 +35,17 @@ public class Árbol {
 
 
     public static void InOrden(Nodo raiz) {
-        if(raiz != null) {
+        if (raiz != null) {
             InOrden(raiz.getIzq());
-            System.out.print(raiz.getValor()+"\t");
+            System.out.print("| " +raiz.getRaiz()+" ");
             InOrden(raiz.getDer());
         }
     }
-
-    public static void PostOrden(Nodo raiz){
-        if(raiz !=null){
+    public static void PostOrden(Nodo raiz) {
+        if (raiz != null) {
             PostOrden(raiz.getIzq());
             PostOrden(raiz.getDer());
-            System.out.print(raiz.getDer()+"\t");
+            System.out.print("| "+raiz.getRaiz()+" ");
         }
     }
 }
