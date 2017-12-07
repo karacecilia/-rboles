@@ -4,49 +4,51 @@ package sample;
  * Created by Akado on 29/11/2017.
  */
 public class Nodo {
-<<<<<<< HEAD
-    private Nodo raiz, der, izq;
-    public int zise;
-
-=======
-    private int raiz;
-    private Nodo der, izq;
->>>>>>> origin/uriel
-
+    public Nodo raiz = null;
+    public Nodo derecha, izquierda;
     public  Object valor;
+
     public Nodo(Object valor) {
         this.valor = valor;
-    }
-<<<<<<< HEAD
-    public int size getzise(){
-        return zise;
     }
 
     public Nodo getRaiz(){
         return raiz;
-=======
-    public Nodo(int raiz){
-        this.raiz = raiz;
->>>>>>> origin/uriel
     }
 
-    public Nodo getDer(){
-        return der;
+    public void setRaiz(Nodo raiz){
+        this.raiz=raiz;
+
     }
 
-    public Nodo getIzq(){
-        return izq;
+    public Nodo getDerecha(){
+        return derecha;
     }
 
-    public void setNodoDerecho(Nodo nodo){
-        der = nodo;
-    }
-    public void setNodoIzquierdo(Nodo nodo){
-        izq = nodo;
+    public Nodo getIzquierda(){
+        return izquierda;
     }
 
-    //Para obtener el dato
-    public int getRaiz(){
-        return raiz;
+    public Object getValor(){
+        return valor;
     }
+
+    public void setValor(Object valor){
+        this.valor=valor;
+    }
+
+    public  int getValorInt(){
+        return Integer.parseInt(valor.toString());
+    }
+
+    public  void setDerecha(Nodo derecha){
+        this.derecha =derecha;
+
+    }
+
+    public void setIzquierda(Nodo izquierdo){
+        this.izquierda =izquierdo;
+    }
+
+
 }
