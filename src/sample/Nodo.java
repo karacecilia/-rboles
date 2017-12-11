@@ -4,8 +4,7 @@ package sample;
  * Created by Akado on 29/11/2017.
  */
 public class Nodo {
-<<<<<<< HEAD
-=======
+
     public Nodo raiz = null;
     public Nodo derecha, izquierda;
     public  Object valor;
@@ -51,7 +50,7 @@ public class Nodo {
     public void setIzquierda(Nodo izquierdo){
         this.izquierda =izquierdo;
     }
->>>>>>> origin/Rama-Antonio
+
 
 
 }

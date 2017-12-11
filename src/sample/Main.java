@@ -1,12 +1,16 @@
 package sample;
 
-public class Main {
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import static javafx.application.Application.launch;
+
+public class Main extends Application{
 
 
-<<<<<<< HEAD
-}
-
-=======
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("arbolito.fxml"));
@@ -20,6 +24,7 @@ public class Main {
         launch(args);
         /*Arbol arbol = new Arbol();
         Nodo raiz = new Nodo(8);
+
         Nodo nodo2 = new Nodo(7);
         Nodo nodo3 = new Nodo(9);
 
@@ -49,4 +54,5 @@ public class Main {
     }
         
 }
->>>>>>> origin/Rama-Antonio
+
+
