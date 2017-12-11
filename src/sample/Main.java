@@ -18,35 +18,34 @@ public class Main extends Application {
 
 
     public static void main(String[] args) {
-        //launch(args);
+
         Árbol arbol = new Árbol();
         Nodo raiz = new Nodo(8);
         Nodo nodo2 = new Nodo(7);
         Nodo nodo3 = new Nodo(9);
 
+
         nodo2.setNodoDerecho(new Nodo(3));
         nodo2.setNodoIzquierdo(new Nodo(5));
 
         nodo3.setNodoDerecho(new Nodo(4));
-        nodo3.setNodoDerecho(new Nodo(2));
+        nodo3.setNodoIzquierdo(new Nodo(2));
 
         raiz.setNodoIzquierdo(nodo2);
         raiz.setNodoDerecho(nodo3);
 
         System.out.println("PreOrden");
         arbol.preOrden(raiz);
-        System.out.print("|");
         System.out.println(" ");
-        System.out.println("-------------------------");
+        System.out.println("--------------------");
         System.out.println("InOrden: ");
         arbol.InOrden(raiz);
-        System.out.print("|");
         System.out.println(" ");
-        System.out.println("-------------------------");
+        System.out.println("--------------------");
         System.out.println("PostOrden: ");
         arbol.PostOrden(raiz);
-        System.out.print("|");
-        System.out.println("-------------------------");
+        System.out.println(" ");
+        System.out.println("--------------------");
 
     }
         
